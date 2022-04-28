@@ -1,0 +1,136 @@
+﻿#give_pic {
+    padding-right: 0px;
+    padding-left: 0px;
+    text-align: center;
+    line-height: 250px;
+}
+
+    #give_pic img {
+        border-radius: 5px;
+    }
+
+#give_msg {
+    line-height: 55px;
+    padding-left: 50px;
+    font-size: 15px;
+}
+
+    #give_msg p {
+        color: rgb(90, 90, 90);
+    }
+
+#give_nav {
+    text-align: center;
+    line-height: 50px;
+    font-size: 20px;
+    letter-spacing: 2px;
+    margin-top: 50px;
+}
+
+    #give_nav div {
+        position: relative;
+        top: 1px;
+    }
+
+.center_ab {
+    padding-bottom: 200px;
+}
+
+.btn-primary {
+    margin: 20px 20px;
+    background-color: rgb(180, 180, 180);
+    border: 0px;
+    border-radius: 15px;
+    width: 70px;
+}
+
+.btn_a input {
+    width: 70px;
+    height: 35px;
+    margin: 30px 20px;
+    border: 1px solid gray;
+    border-radius: 5px;
+}
+
+    .btn_a input:hover {
+        background-color: rgb(255, 100, 150);
+        border: 3px solid gray;
+        color: white;
+        transition: all .2s linear;
+    }
+
+
+
+
+
+
+
+#gv_a_title {
+    height: 70px;
+    line-height: 70px;
+    font-size: 15px;
+    font-weight: bold;
+    border-bottom: 2px solid rgb(180, 180, 180);
+}
+
+#gv_a_content {
+    height: 140px;
+    line-height: 140px;
+    border-bottom: 2px solid rgb(180, 180, 180);
+}
+
+.gv_a_content_btn_a {
+    position: absolute;
+    top: 40px;
+    display: block;
+    height: 20px;
+    line-height: 20px;
+}
+
+.gv_a_content_btn_b {
+    position: absolute;
+    top: 80px;
+    display: block;
+    height: 20px;
+    line-height: 20px;
+}
+
+.gv_a_content_money_a {
+    position: absolute;
+    display: block;
+    height: 20px;
+    line-height: 20px;
+    right: 50px;
+    top: 60px;
+}
+
+.gv_a_content_money_b {
+    position: absolute;
+    display: block;
+    height: 20px;
+    line-height: 20px;
+    left: 50px;
+    top: 60px;
+}
+
+
+
+
+.up_start {
+    background-color: rgb(222, 222, 222);
+    border-bottom: 1px solid rgb(200, 200, 200);
+    border-top: 5px solid rgb(200, 200, 200);
+    border-left: 2px solid rgb(200, 200, 200);
+    border-right: 2px solid rgb(200, 200, 200);
+    transition: all .5s linear;
+}
+
+.start_up {
+    background-color: white;
+    border-top: 5px solid rgb(255, 100, 88);
+    border-bottom: 1px solid white;
+    border-left: 2px solid rgb(200, 200, 200);
+    border-right: 2px solid rgb(200, 200, 200);
+    color: rgb(255, 100, 88);
+    transition: all .5s linear;
+}

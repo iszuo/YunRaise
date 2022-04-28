@@ -1,0 +1,213 @@
+﻿#carousel-example-generic {
+    border-radius: 20px;
+    overflow: hidden;
+    margin: 50px auto;
+    box-shadow: 0px 0px 15px black;
+}
+
+
+/* 底部 */
+#msg_show {
+    height: 300px;
+    margin-bottom: 80px;
+}
+
+#msg_show_left {
+    border-right: 2px dashed rgb(222,222,222);
+}
+
+    #msg_show_left div {
+        padding-right: 0px;
+        padding-left: 0px;
+        text-align: center;
+    }
+
+    #msg_show_left img {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+    }
+
+    #msg_show_left h2 {
+        color: rgb(238, 95, 87);
+    }
+
+    #msg_show_left h5 {
+        color: gray;
+    }
+
+#msg_show_right {
+    padding-right: 0px;
+    padding-left: 0px;
+    padding-left: 30px;
+}
+
+    #msg_show_right div {
+        margin: 16px;
+        position: relative;
+    }
+
+    #msg_show_right img {
+        width: 60px;
+        border-radius: 10px;
+    }
+
+    #msg_show_right div div {
+        margin: 0px;
+        position: absolute;
+        z-index: 1000;
+        left: 80px;
+        top: 0px;
+    }
+
+        #msg_show_right div div h3 {
+            margin: 0px 0px 0px 0px;
+        }
+
+        #msg_show_right div div h5 {
+            margin: 5px 0px 10px 0px;
+        }
+
+
+/* 中间 */
+#item_show h3 {
+    width: auto;
+    border-bottom: 2px solid rgb(200, 180, 150);
+    line-height: 70px;
+    position: relative;
+}
+
+#item_show ul li a img {
+    width: 255px;
+    height: 255px;
+    border-bottom: 1px solid rgb(230,230,230);
+}
+
+#item_show ul li div a h4 {
+    border-bottom: 1px dashed rgb(230,230,230);
+}
+
+.pro_ul {
+    height: auto;
+    padding: 0px;
+    overflow: hidden;
+    margin-bottom: 100px;
+    border-bottom: 1px dashed rgb(200,200,200);
+    padding-bottom: 80px;
+}
+
+    .pro_ul li {
+        float: left;
+        width: 255px;
+        height: 445px;
+        background-color: #fff;
+        margin: 20px 0 0 20px;
+        overflow: hidden;
+        transition: all .3s linear;
+        border: 1px solid rgb(220,220,220);
+    }
+
+        .pro_ul li:hover {
+            box-shadow: 0px 0px 30px 0px gray;
+        }
+
+        .pro_ul li a:hover {
+            text-decoration: none;
+        }
+
+        .pro_ul li .pro_txt_field {
+            padding: 0px 15px 15px 15px;
+        }
+
+            .pro_ul li .pro_txt_field .pro_title {
+                overflow: hidden;
+                height: 48px;
+                text-overflow: ellipsis;
+                display: -webkit-box;
+                -webkit-line-clamp: 2;
+                margin: 16px 0;
+                font-size: 16px;
+                font-weight: 700;
+                line-height: 24px;
+                color: #222c37;
+            }
+
+            .pro_ul li .pro_txt_field .au_logo {
+                width: 20px;
+                height: 20px;
+                border: 1px solid #dee0e1;
+                border-radius: 50%;
+                margin-right: 4px;
+                float: left;
+            }
+
+            .pro_ul li .pro_txt_field .author p {
+                height: 22px;
+                width: 10em;
+                overflow: hidden;
+                white-space: nowrap;
+                text-overflow: ellipsis;
+                font-size: 14px;
+                line-height: 22px;
+                color: #7a8087;
+            }
+
+            .pro_ul li .pro_txt_field .status_ex {
+                margin-top: 7px;
+                height: 26px;
+                overflow: hidden;
+            }
+
+                .pro_ul li .pro_txt_field .status_ex .left {
+                    float: left;
+                }
+
+                .pro_ul li .pro_txt_field .status_ex .status_title {
+                    font-size: 16px;
+                    line-height: 16px;
+                    margin-top: 10px;
+                    color: #21b6c7;
+                    font-weight: 700;
+                    float: left;
+                }
+
+                .pro_ul li .pro_txt_field .status_ex .right {
+                    float: right;
+                }
+
+                .pro_ul li .pro_txt_field .status_ex .percent {
+                    font-size: 14px;
+                    line-height: 16px;
+                    margin-top: 10px;
+                    color: #7a8087;
+                    font-weight: 400;
+                    float: right;
+                }
+
+        .pro_ul li .yyue_line {
+            height: 6px;
+            margin-top: 10px;
+            position: relative;
+            overflow: hidden;
+        }
+
+            .pro_ul li .yyue_line .progress-now {
+                position: absolute;
+                top: 0;
+                left: 0;
+                height: 100%;
+                background: linear-gradient(90deg, #21b6c7, #00cba6);
+            }
+
+        .pro_ul li .pro_txt_field .gray_ex {
+            padding-top: 10px;
+            font-size: 14px;
+            line-height: 21px;
+            color: #7a8087;
+            overflow: hidden;
+            height: 42px;
+            text-overflow: ellipsis;
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+        }
+

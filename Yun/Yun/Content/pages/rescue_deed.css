@@ -1,0 +1,225 @@
+﻿#tp {
+    margin-top: 30px;
+    background-color: rgb(245,245,245);
+    border-bottom: 3px solid rgb(236,74,65);
+}
+
+    #tp ul li {
+        float: left;
+        list-style-type: none;
+        width: 60px;
+        height: 40px;
+        text-align: center;
+        line-height: 40px;
+        margin: 0 5px;
+        /* border: 1px solid black; */
+        cursor: pointer;
+        position: relative;
+        left: -40px;
+    }
+
+.type {
+    color: rgb(236,74,65);
+    font-weight: bold;
+}
+
+#state {
+    margin: 50px;
+}
+
+    #state div {
+        position: relative;
+        top: 30px;
+        left: -30px;
+    }
+
+
+/* 项目列表 */
+#item_show h3 {
+    width: auto;
+    border-bottom: 2px solid rgb(200, 180, 150);
+    line-height: 70px;
+    position: relative;
+}
+
+#item_show ul li a img {
+    width: 255px;
+    height: 255px;
+}
+
+.pro_ul {
+    height: auto;
+    padding: 0px;
+    overflow: hidden;
+    margin-bottom: 100px;
+    border-bottom: 1px dashed rgb(200,200,200);
+    padding-bottom: 130px;
+}
+
+    .pro_ul li {
+        float: left;
+        width: 255px;
+        height: 445px;
+        background-color: #fff;
+        margin: 20px 0 0 20px;
+        overflow: hidden;
+        transition: all .3s linear;
+        border: 1px solid rgb(220,220,220);
+    }
+
+        .pro_ul li:hover {
+            box-shadow: 0px 0px 30px 0px gray;
+        }
+
+        .pro_ul li a:hover {
+            text-decoration: none;
+        }
+
+        .pro_ul li .pro_txt_field {
+            padding: 0px 15px 15px 15px;
+        }
+
+            .pro_ul li .pro_txt_field .pro_title {
+                overflow: hidden;
+                height: 48px;
+                text-overflow: ellipsis;
+                display: -webkit-box;
+                -webkit-line-clamp: 2;
+                margin: 16px 0;
+                font-size: 16px;
+                font-weight: 700;
+                line-height: 24px;
+                color: #222c37;
+            }
+
+            .pro_ul li .pro_txt_field .au_logo {
+                width: 20px;
+                height: 20px;
+                border: 1px solid #dee0e1;
+                border-radius: 50%;
+                margin-right: 4px;
+                float: left;
+            }
+
+            .pro_ul li .pro_txt_field .author p {
+                height: 22px;
+                width: 10em;
+                overflow: hidden;
+                white-space: nowrap;
+                text-overflow: ellipsis;
+                font-size: 14px;
+                line-height: 22px;
+                color: #7a8087;
+            }
+
+            .pro_ul li .pro_txt_field .status_ex {
+                margin-top: 7px;
+                height: 26px;
+                overflow: hidden;
+            }
+
+                .pro_ul li .pro_txt_field .status_ex .left {
+                    float: left;
+                }
+
+                .pro_ul li .pro_txt_field .status_ex .status_title {
+                    font-size: 16px;
+                    line-height: 16px;
+                    margin-top: 10px;
+                    color: #21b6c7;
+                    font-weight: 700;
+                    float: left;
+                }
+
+                .pro_ul li .pro_txt_field .status_ex .right {
+                    float: right;
+                }
+
+                .pro_ul li .pro_txt_field .status_ex .percent {
+                    font-size: 14px;
+                    line-height: 16px;
+                    margin-top: 10px;
+                    color: #7a8087;
+                    font-weight: 400;
+                    float: right;
+                }
+
+        .pro_ul li .yyue_line {
+            height: 6px;
+            margin-top: 10px;
+            position: relative;
+            overflow: hidden;
+        }
+
+            .pro_ul li .yyue_line .progress-now {
+                position: absolute;
+                top: 0;
+                left: 0;
+                height: 100%;
+                background: linear-gradient(90deg, #21b6c7, #00cba6);
+            }
+
+        .pro_ul li .pro_txt_field .gray_ex {
+            padding-top: 10px;
+            font-size: 14px;
+            line-height: 21px;
+            color: #7a8087;
+            overflow: hidden;
+            height: 42px;
+            text-overflow: ellipsis;
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+        }
+
+#show_more {
+    width: 500px;
+    height: 50px;
+    position: absolute;
+    bottom: 0px;
+    left: 350px;
+    margin-bottom: 40px;
+    font-size: 20px;
+    letter-spacing: 15px;
+}
+
+    #show_more:hover {
+        background-color: rgb(200,200,200);
+        color: white;
+        transition: all .2s linear;
+    }
+
+/*#had_b {
+    display: block;
+}*/
+
+#state label {
+    background-color: rgb(230,230,230);
+    border: none;
+    box-shadow: none;
+    margin: 0px 10px;
+    transition: all .5s ease;
+}
+
+    #state label:hover {
+        background-color: #00C4A1;
+        box-shadow: 0px 0px 5px 0px #00C4A1;
+    }
+
+        #state label:hover a {
+            color: white;
+            text-decoration: none;
+        }
+
+    #state label a {
+        color: black;
+    }
+
+#tp li a {
+    color: black;
+}
+
+    #tp li a:hover {
+        color: #E4B9C0;
+        text-decoration: none;
+        transition: all .3s ease;
+    }

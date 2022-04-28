@@ -1,0 +1,125 @@
+﻿#center {
+    padding: 70px 0px;
+}
+
+    #center ul li {
+        display: inline-block;
+        margin: 0px 10px;
+        width: 31%;
+        list-style-type: none;
+        font-size: 20px;
+        text-align: center;
+        height: 40px;
+        line-height: 40px;
+        border: 1px solid rgba(238, 94, 86, 0.3);
+    }
+
+.current {
+    background-color: rgb(238, 94, 86);
+    color: white;
+    box-shadow: 0px 0px 5px 1px red;
+}
+
+#center .msg_show {
+    width: 230px;
+    height: 300px;
+    margin: 30px auto;
+    border-radius: 5px;
+    overflow: hidden;
+    background-color: rgb(243, 243, 243);
+    border: 1px solid rgba(150, 150, 150, .5);
+}
+
+    #center .msg_show .msg_show_top {
+        height: 200px;
+        text-align: center;
+        line-height: 200px;
+        background-color: rgb(200, 200, 200);
+        color: rgb(150, 150, 150);
+        font-size: 18px;
+    }
+
+    #center .msg_show .msg_show_btm span {
+        display: inline-block;
+    }
+
+    #center .msg_show .msg_show_btm {
+        margin: 15px auto 5px 15px;
+    }
+
+#center .content-title {
+    border-bottom: 1px dashed rgb(231, 231, 231);
+    padding: 15px 40px;
+    font-size: 20px;
+}
+
+#center .msg {
+    background-color: white;
+    height: auto;
+    border-radius: 20px;
+    border: 1px solid rgb(231, 231, 231);
+}
+
+    #center .msg p {
+        margin: 30px;
+        font-size: 16px;
+    }
+
+    #center .msg .hint {
+        position: absolute;
+        left: 80px;
+        top: 30px;
+    }
+
+    #center .msg .next {
+        background-color: red;
+        margin: 5px;
+        position: relative;
+        left: 520px;
+        width: 130px;
+        height: 40px;
+        font-size: 18px;
+    }
+
+.btn-primary {
+    background-color: white;
+    color: black;
+}
+
+#center .btn-group label {
+    margin: 0px 2px;
+    border-radius: 5px;
+}
+
+/**
+			 * 发起人信息
+			 */
+#center .ite_msg_show {
+    width: 230px;
+    height: 300px;
+    margin: 30px auto;
+    border-radius: 5px;
+    overflow: hidden;
+    border: 1px solid rgba(150, 150, 150, .5);
+}
+
+#center .itm_msg_show_btm {
+    margin: 10px 16px;
+    color: gray;
+}
+
+#center .previous {
+    background-color: red;
+    position: relative;
+    right: 50px;
+    width: 130px;
+    height: 40px;
+}
+
+#center .sub {
+    background-color: red;
+    position: relative;
+    left: 420px;
+    width: 130px;
+    height: 40px;
+}

@@ -1,0 +1,196 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="Yun.SiteMaster" %>
+
+<!DOCTYPE html>
+
+<html lang="zh">
+<head runat="server">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title><%: Page.Title %> - 帮助更多的人去完成他们的梦想</title>
+    <link rel="icon" href="img/云筹网Logo_lg2.png" type="image/gif" />
+    
+    <link href="Content/font-awesome.min.css" rel="stylesheet" />
+    <link href="Content/bootstrap.min.css" rel="stylesheet" />
+
+    <link href="Content/pages/master.css" rel="stylesheet" />
+    <script type="text/javascript" src="Scripts/pages/master.js"></script>
+    
+    <asp:ContentPlaceHolder ID="StyleSheet" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form runat="server">
+        <!-- 头部 -->
+        <header class="navbar navbar-static-top bs-docs-nav top-head" id="top" style="margin-bottom: 0px; border-bottom: 1px solid rgba(100, 100, 100, .2); box-shadow: 0px 0px 10px black;">
+            <!-- 第一部分 -->
+            <div id="had_a" style="border-bottom: 2px solid rgba(100, 100, 100, .2);">
+                <div class="container">
+                    <div class="navbar-header">
+                        <a href="index.aspx">
+                            <img src="../img/200，80.png" style="height: 50px;" />
+                        </a>
+                    </div>
+                    <nav id="bs-navbar" class="collapse navbar-collapse" style="position: relative; left: 20px;">
+                        <ul class="nav navbar-nav nav-list">
+                            <li>
+                                <a href="index.aspx">首页</a>
+                            </li>
+                            <li>
+                                <a href="rescue_deed.aspx?tp=全部&state=所有项目&pg=1">浏览项目</a>
+                            </li>
+                            <li>
+                                <a href="project_res.aspx">发布项目</a>
+                            </li>
+                            <li>
+                                <a href="about.aspx">关于云筹</a>
+                            </li>
+                            <!-- 搜索框 -->
+
+
+
+                       <%-- <li style="position: relative; left: 80px;">
+                                <input runat="server" id="asd" type="text" class="form-control" placeholder="搜索" style="position: absolute; top: 8px; border-radius: 16px 0 0 16px; width: 150px;">--%>
+                                <%--<button type="button" class="btn btn-info" style="position: absolute; border-radius: 0 16px 16px 0; width: 50px; top: 8px; left: 140px; height: 34px">
+                                    <i class='fa fa-search' aria-hidden='true'></i>
+                                </button>--%>
+                                <%--<i class='fa fa-search' aria-hidden='true' style="position:absolute;left:160px;z-index:1000;top:17px;color:white;"></i>
+                                <asp:Button ID="find" OnClick="find_Click" runat="server" Text="" class="btn btn-info" style="position: absolute; border-radius: 0 16px 16px 0; width: 50px; top: 8px; left: 140px; height: 34px" />
+                            </li>--%>
+
+
+                        </ul>
+                        <!-- 登录前显示 -->
+                        <ul runat="server" class="nav navbar-nav navbar-right" id="unlogin" style="display: block;">
+                            <li><a href="login.aspx">登录</a></li>
+                            <li style="position: relative; top: 13px;">|</li>
+                            <li><a href="register.aspx">注册</a></li>
+                        </ul>
+                        <!-- 登录后显示 -->
+                        <ul runat="server" class="nav navbar-nav navbar-right" id="logined" style="display: none;">
+                            <div class="dropdown">
+                                <span style="position: relative; top: 5px; right: 10px;">欢迎&nbsp;&nbsp;</span>
+                                <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true" style="position: relative; top: 3px;">
+                                    <asp:Image ID="UserPic" runat="server" Style="border-radius: 50%; margin-right: 10px; width: 30px; height: 30px;" />
+                                    <span runat="server" id="login_name">admin</span>
+                                </button>
+                                <ul class="dropdown-menu logined-menu" >
+                                    <li>
+                                        <a href="SetUp.aspx">个人设置</a>
+                                    </li>
+                                    <li>
+                                        <a href="MyGive.aspx">我的众筹</a>
+                                    </li>
+                                    <li>
+                                        <asp:LinkButton ID="LinkButton1" runat="server" OnClick="Quit_Login_Click">退出登录</asp:LinkButton>
+                                    </li>
+                                </ul>
+                            </div>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+
+            <!-- 第二部分 -->
+            <%--<div id="had_b">
+                <div class="container">
+                    <ul>
+                        <li>全部</li>
+                        <li>家庭困难</li>
+                        <li>商业困难</li>
+                        <li>自然灾害</li>
+                        <li>创业众筹</li>
+                        <li>经济困难</li>
+                        <li>其他</li>
+                    </ul>
+                </div>
+            </div>--%>
+        </header>
+
+        <!-- 中间 -->
+        <asp:ContentPlaceHolder ID="MainContent" runat="server">
+        </asp:ContentPlaceHolder>
+
+        <!-- 底部 -->
+        <footer class="bs-docs-footer">
+            <div style="background-color: rgb(90,88,91); padding: 20px; border-bottom: 2px solid rgba(230, 230, 230, 0.1);">
+                <div class="row" style="width: 60%; margin: 0 auto;">
+                    <div class="col-md-4">
+                        <h4 style="color: rgb(213,179,142);">众筹项目</h4>
+                        <p><a href="#">家庭困难</a></p>
+                        <p><a href="#">商业困难</a></p>
+                        <p><a href="#">自然灾害</a></p>
+                        <p><a href="#">创业众筹</a></p>
+                        <p><a href="#">经济困难</a></p>
+                        <p><a href="#">其他</a></p>
+
+                    </div>
+                    <div class="col-md-4">
+                        <h4 style="color: rgb(213,179,142);">关于</h4>
+                        <p><a href="#">关于云筹</a></p>
+                        <p><a href="#">联系我们</a></p>
+                        <p><a href="#">帮助中心</a></p>
+                        <p><a href="#">团队介绍</a></p>
+                        <p><a href="#">服务协议</a></p>
+                        <p><a href="#">项目发起规范</a></p>
+                    </div>
+                    <div class="col-md-4" style="height: 220px;">
+                        <img src="../img/220.png" style="text-align: center; line-height: 220px;" />
+                    </div>
+                </div>
+            </div>
+            <div style="background-color: rgb(80,80,80); padding: 20px;">
+                <div style="width: 60%; margin: 0 auto; text-align: center;">
+                    <p style="color: white;">
+                        友情链接：和讯网 雷锋网 36氛 ho123 360安全网址 北青网 凤凰网 金融界 财新网 钛媒体
+                    </p>
+                    <p style="color: gray;">
+                        &copy;河北投资有限公司&nbsp;&nbsp;yunchou.com 版权所有 冀ICP备149821932号
+                    </p>
+                </div>
+            </div>
+        </footer>
+
+        <!-- 一键返回顶部 -->
+        <div id="aside-buttons">
+            <div class="kefu_inlet">
+                <span class="glyphicon glyphicon-user" aria-hidden="true"></span>
+                <p>客服</p>
+            </div>
+
+            <div id="returnTop" class="return-top">
+                <span class="glyphicon glyphicon-chevron-up" aria-hidden="true"></span>
+                <p>TOP</p>
+            </div>
+            <div class="img_vx">
+                <img src="../img/vx_img.jpg" width="100px" />
+            </div>
+        </div>
+    </form>
+</body>
+</html>
+<script type="text/javascript">
+    // 显示按钮
+    var btn1 = document.getElementById('aside-buttons');
+    window.onscroll = function () {
+        var scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
+        if (scrollTop > 500) {
+            btn1.style.display = 'block';
+        } else {
+            btn1.style.display = 'none';
+        }
+    }
+    // 一键返回顶部
+    var btn2 = document.getElementById('returnTop');
+    btn2.onclick = function () {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+    }
+    // 显示客服
+    $(".kefu_inlet").mouseover(function () {
+        $(".img_vx").css("display", "block");
+    })
+    $(".kefu_inlet").mouseout(function () {
+        $(".img_vx").css("display", "none");
+    })
+</script>

@@ -1,0 +1,60 @@
+﻿.fr {
+    float: right;
+}
+
+.homemain {
+    padding: 30px;
+    margin: 80px 0px;
+    background: #fff;
+}
+
+.faqitem {
+    color: #000;
+    font-size: 14px;
+}
+
+pre {
+    white-space: pre-wrap;
+    font-size: 14px;
+    color: #000;
+}
+
+    pre strong a {
+        color: black;
+        cursor: text;
+    }
+
+        pre strong a:hover {
+            color: black;
+            text-decoration: none;
+        }
+
+.faqitem .ficon pre p {
+    margin: 14px 0;
+}
+
+#story div {
+    background-color: #f5f5f5;
+    position: fixed;
+    top: 200px;
+    right: 290px;
+    border-radius: 10px;
+    padding: 20px 30px;
+    border: 1px solid #ccc;
+}
+
+#story h4 {
+    height: 20px;
+    line-height: 20px;
+    font-size: 15px;
+}
+
+    #story h4 a {
+        color: #999;
+    }
+
+        #story h4 a:hover {
+            color: #337ab7;
+            text-decoration: none;
+            transition: all .3s linear;
+        }

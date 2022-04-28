@@ -1,0 +1,125 @@
+﻿body {
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+
+/* 头部 */
+/* 第一部分 */
+#bs-navbar ul li a {
+    animation: all 5s ease-in-out 6s;
+    color: black;
+}
+
+    #bs-navbar ul li a:hover {
+        height: 50px;
+        color: red;
+        background-color: rgba(100,100,100,.2);
+        border-bottom: 3px solid red;
+        border-radius: 8px 8px 0 0;
+        transition: all .5s ease;
+    }
+
+#bs-navbar .logined-menu {
+    width: 100px;
+    min-width: 100px;
+    position: absolute;
+    top: 45px;
+}
+
+    #bs-navbar .logined-menu li a:hover {
+        height: auto;
+        border-bottom: none;
+    }
+
+/* 第二部分 */
+#had_b {
+    display: none;
+}
+
+    #had_b ul li {
+        float: left;
+        list-style-type: none;
+        width: 14%;
+        margin: 0 auto;
+        text-align: center;
+        height: 35px;
+        line-height: 35px;
+        font-size: 15px;
+        cursor: pointer;
+    }
+
+        #had_b ul li:hover {
+            background-color: rgba(100, 100, 100, .2);
+            border-bottom: 3px solid red;
+            color: red;
+            transition: all .5s ease;
+        }
+
+
+/* 底部 */
+footer {
+    /* position: absolute; */
+    /* bottom: 0px; */
+    width: 100%;
+    box-shadow: 0px 0px 10px black;
+}
+
+    footer a {
+        color: white;
+    }
+
+        footer a:hover {
+            color: gray;
+            text-decoration: none;
+            transition: all .3s ease;
+        }
+
+
+/* 一键返回顶部 */
+#aside-buttons {
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    text-align: center;
+    display: none;
+    box-sizing: border-box;
+}
+
+    #aside-buttons .return-top {
+        height: 60px;
+        padding: 10px 0px;
+        cursor: pointer;
+        width: 60px;
+        background: #f8f8f9;
+        color: #bcbfc3;
+        border-radius: 5px;
+    }
+
+    #aside-buttons .kefu_inlet {
+        width: 60px;
+        padding: 10px 0px;
+        height: 60px;
+        color: #bcbfc3;
+        cursor: pointer;
+        background: #f8f8f9;
+        margin-bottom: 20px;
+        border-radius: 5px;
+    }
+
+    #aside-buttons .return-top:hover {
+        color: black;
+        transition: all .3s linear;
+    }
+
+    #aside-buttons .kefu_inlet:hover {
+        color: black;
+        transition: all .3s linear;
+    }
+
+    #aside-buttons .img_vx {
+        position: absolute;
+        top: -20px;
+        right: 80px;
+        display: none;
+        transition: all .3s linear;
+    }
